@@ -72,8 +72,8 @@
                 secondWord;
 
             currentDate = new Date().getTime();
-            secondsLeft = (targetDate - currentDate) / 1000;
-
+            secondsLeft = ( currentDate - targetDate) / 1000;
+secondsLeft = secondsLeft > 0 ? secondsLeft : secondsLeft * -1;
             if (secondsLeft > 0) {
                 days = parseInt(secondsLeft / 86400, 10);
                 secondsLeft = secondsLeft % 86400;
@@ -83,11 +83,6 @@
 
                 minutes = parseInt(secondsLeft / 60, 10);
                 seconds = parseInt(secondsLeft % 60, 10);
-            } else {
-                days = 0;
-                hours = 0;
-                minutes = 0;
-                seconds = 0;
             }
 
             if (parameters.plural) {
