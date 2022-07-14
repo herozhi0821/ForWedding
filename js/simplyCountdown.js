@@ -35,7 +35,7 @@
         var parameters = extend({
                 year: 2022,
                 month: 7,
-                day: 24,
+                day: 15,
                 words: {
                     days: 'day',
                     hours: 'hour',
@@ -73,7 +73,7 @@
 
             currentDate = new Date().getTime();
             secondsLeft = ( currentDate - targetDate) / 1000;
-secondsLeft = secondsLeft > 0 ? secondsLeft : secondsLeft * -1;
+			secondsLeft = secondsLeft > 0 ? secondsLeft : secondsLeft * -1;
             if (secondsLeft > 0) {
                 days = parseInt(secondsLeft / 86400, 10);
                 secondsLeft = secondsLeft % 86400;
