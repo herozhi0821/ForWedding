@@ -392,8 +392,9 @@ div#simply-countdown-losange {
 }
 
 span.simply-amount {
-    color: #fff;
+    color: #abff1e;
     font-size: 60px;
+    font-weight: bold;
 }
 
 span.simply-word {
